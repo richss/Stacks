@@ -23,6 +23,9 @@ public class StackTests {
         //Peak Test
         System.out.println("Peak Test: Dr. Lecter = " + s.peak());
 
+        //Full Test
+        s.push("Jack Burton"); //Should produce an error message if ArrayStack is set to size 2.
+
         //Pop content and Print.
         while (s.isEmpty() == false) {
             System.out.println("Pop Item:" + s.pop());
@@ -48,7 +51,7 @@ public class StackTests {
     {
 
         Stack s1 = new ListStack<String>();
-        Stack s2 = new ArrayStack<String>(10);
+        Stack s2 = new ArrayStack<String>(2);
 
         StackTests.StackTests(s1);
         StackTests.StackTests(s2);

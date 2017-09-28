@@ -24,10 +24,25 @@ public class ArrayStack<t> implements Stack<t> {
 
 
     /**
+     * Returns true if the stack array is full.  False otherwise.
+     * @return
+     */
+    public boolean isFull()
+    {
+        return (top == (arr.length - 1));
+    }
+
+    /**
      * Adds a value to the top of a stack
      * @param value
      */
     public void push(t value) {
+
+        if (isFull()) {
+            System.out.println("Unable to comply. The stack is full.");
+            return;
+        }
+
         top++;
         arr[top] = value;
     }
