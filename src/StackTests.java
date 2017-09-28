@@ -21,7 +21,7 @@ public class StackTests {
         System.out.println("Empty Test: False = " + s.isEmpty());
 
         //Peak Test
-        System.out.println("Peak Test: Dr. Lecter = " + s.peak());
+        System.out.println("Peak Test: Dr. Lecter = " + s.top());
 
         //Full Test
         s.push("Jack Burton"); //Should produce an error message if ArrayStack is set to size 2.
@@ -34,7 +34,7 @@ public class StackTests {
         //Confirm is Empty
         System.out.println("Empty Test: True = " + s.isEmpty());
         System.out.println("Empty Pop Test: null=" + s.pop());
-        System.out.println("Empty Peak Test: null=" + s.peak());
+        System.out.println("Empty Peak Test: null=" + s.top());
 
         //Test Clear
         s.push("Dr. Jones");

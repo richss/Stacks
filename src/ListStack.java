@@ -39,7 +39,7 @@ public class ListStack<t> implements Stack<t> {
      * Returns the value at the top of stack without removing it
      * @return value at the top of the stack
      */
-    public t peak() {
+    public t top() {
         return list.getValueAt(0);
     }
 

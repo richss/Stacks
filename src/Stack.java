@@ -21,7 +21,7 @@ public interface Stack<t> {
      * Returns the value at the top of stack without removing it
      * @return value at the top of the stack
      */
-    public t peak();
+    public t top();
 
     /**
      * Empties the stack
